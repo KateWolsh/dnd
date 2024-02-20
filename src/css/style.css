@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.column h2 {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+.add-task {
+    background-color: #247b7e; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.column {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+}
+
+.task-list ul {
+    padding: 0;
+}
+
+.task-wrapper {
+    position: relative;
+    list-style-type: none;
+    height: 55px;
+    background-color: #70c9c4;
+    line-height: 55px;
+    margin: 10px;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.dragging-over {
+    cursor: grab;
+}
+
+.add-space-between {
+    margin-bottom: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.open-add-task-new {
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #b0f60b;
+}
+
+.open-add-task:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+}
+
+.delete {
+   position: absolute;
+   right: 5px;
+   top: 15px;
+   background-color: #247b7e; /* Green */
+   border: none;
+   color: white;
+   padding: 5px 7px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+   border-radius: 5px;
+}
+
+.close {
+    background-color: #247b7e; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.open-add-task {
+    background-color: #247b7e; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.column.dragged {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+    background: #fff;
+}
